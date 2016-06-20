@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form </title>
+    </head>
+    <body>
+        <h3>Registration form</h3>
+        <form id="registration" method="post" action="https://formspree.io/graafx1@gmail.com">
+         <label for="name">Name</label>
+         <input type="text" name="name" id="name"><br><br>
+         <label for="email">E-mail</label>
+         <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br><br>
+         <label for="phone-number">Phone number</label>
+         <input type="number" name="phone-number" id="phone-number" pattern="[0-9]"><br><br>
+         <label for="password">Password</label>
+         <input type="password" name="password" id="password" pattern=".{6,}" title="Minimum six symbols" required><br><br>
+         <label for="gender">Gender</label>
+         <input type="radio" name="gender" id="gender" value="male" checked>
+         Male
+         <input type="radio" name="gender" id="gender" value="female">
+         Female<br><br>
+         <input type="checkbox" name="newsletter" id="newsletter" value="yes" checked> I want to receive a newsletter<br><br>
+         <label for="comment">Comment </label><br>
+         <textarea rows="4" cols="50" name="comment" id="comment"></textarea><br>
+         <input type="submit" value="Send">
+         <input type="reset" value="Clear">
+     </form>
+    </body>
+</html>
